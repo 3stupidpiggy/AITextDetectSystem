@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# 运行数据
+aigc_web/aigc_web.db
+*.db
+*.sqlite3
+
+# 模型权重与基座模型
+*.pt
+*.pkl
+*.bin
+*.safetensors
+scripts/gpt2-xl/
+scripts/deberta-v3-base/
+scripts/windows_log/
+
+# 压测原始数据与报告（体积较大）
+aigc_web/perf/results*.jtl
+aigc_web/perf/report*/
+aigc_web/perf/report_detect_page/
+
+# 编辑器与系统文件
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.log
+_tmp_*
